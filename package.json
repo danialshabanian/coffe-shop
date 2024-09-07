@@ -1,0 +1,19 @@
+{
+  "name": "coffe-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "danial": "tailwindcss -i ./src/tailwind.css -o ./src/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "swiper": "^11.1.7"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.5"
+  }
+}

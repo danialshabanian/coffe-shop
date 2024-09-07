@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fn" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود و ثبت نام - فروشگاه</title>
+    <link
+      rel="shortcut icon"
+      href="./img/Heder/fav-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/main.css" />
+    <style>
+      .bg-coffee {
+        background: url("./img/img.bg/22.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .bg-coffee-mobile {
+        background: url("./img/img.bg/close-up-roasted-coffee-beans-cup.jpg")
+          no-repeat center center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="bg-gray-100 min-h-screen flex items-center justify-center bg-coffee"
+    >
+      <div
+        class="bg-white bg-opacity-80 shadow-lg rounded-lg mx-4 md:mx-0 w-full max-w-md p-8 backdrop-blur-md"
+      >
+        <h2
+          class="text-3xl font-DanaDemiBold mb-6 text-center text-gray-800"
+          id="formTitle"
+        >
+          ورود
+        </h2>
+
+        <!-- فرم ورود -->
+        <form id="loginForm" class="space-y-6">
+          <div>
+            <label
+              for="loginEmail"
+              class="block text-sm font-DanaMedium text-gray-700"
+              >ایمیل شما</label
+            >
+            <input
+              type="email"
+              id="loginEmail"
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coffee-200 focus:border-transparent transition-shadow"
+              placeholder="your email@gmail.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="your password"
+              class="block text-sm font-DanaMedium text-gray-700"
+              >رمز عبور</label
+            >
+            <input
+              type="password"
+              id="loginPassword"
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coffee-200 focus:border-transparent transition-shadow"
+              placeholder="●●●●●●●●"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-brown-600 text-white py-2 rounded-md hover:bg-brown-700 focus:outline-none focus:ring-2 focus:ring-brown-500 transition-colors"
+          >
+            ورود
+          </button>
+        </form>
+
+        <!-- فرم ثبت‌نام -->
+        <form id="signupForm" class="space-y-6 hidden">
+          <div>
+            <label
+              for="signupName"
+              class="block text-sm font-DanaMedium text-gray-700"
+              >نام و نام خانوادگی
+            </label>
+            <input
+              type="text"
+              id="signupName"
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coffee-200 focus:border-transparent transition-shadow"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="signupEmail"
+              class="block text-sm font-DanaMedium text-gray-700"
+              >ایمیل شما</label
+            >
+            <input
+              type="email"
+              id="signupEmail"
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coffee-200 focus:border-transparent transition-shadow"
+              placeholder="your@example.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="signupPassword"
+              class="block text-sm font-DanaMedium text-gray-700"
+              >رمز عبور</label
+            >
+            <input
+              type="password"
+              id="signupPassword"
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coffee-200 focus:border-transparent transition-shadow"
+              placeholder="●●●●●●●●"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-brown-600 text-white py-2 rounded-md hover:bg-brown-700 focus:outline-none focus:ring-2 focus:ring-brown-500 transition-colors"
+          >
+            ثبت‌نام
+          </button>
+        </form>
+
+        <p class="mt-4 text-center text-sm text-gray-600">
+          <span id="switchText">حساب کاربری ندارید؟</span>
+          <a href="#" id="switchLink" class="text-brown-600 hover:underline"
+            >ثبت‌نام کنید</a
+          >
+        </p>
+      </div>
+    </section>
+  </body>
+  <script src="./js/sabtnam.js"></script>
+</html>
